@@ -13,7 +13,6 @@ body {
   max-width: 960px;
   margin: 0 auto;
   font-size: 1rem;
-  color: white;
 }
 
 /*Header*/
@@ -71,6 +70,7 @@ header {
 
 .navigation {
   background-color: firebrick;
+  color: white;
 }
 
 .navigation .container {
@@ -113,3 +113,30 @@ header {
 }
 
 /*Location / Hours */
+
+.location-hours {
+  display: flex;
+  padding: 3rem 0 4rem 0;
+}
+
+.location-hours h4 {
+  background-color: black;
+  color: white;
+}
+
+.location, .hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.location-hours h4 {
+  padding: 1rem 0 1rem 2rem;
+}
+
+/*Footer*/
+
+.footer {
+  
+}
