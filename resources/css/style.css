@@ -32,3 +32,36 @@ header {
   height: 1.5rem;
   padding-right: 0.5rem;
 }
+
+/*New Arrival*/
+
+.new-arrival {
+  background-image: url("../moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.new-arrival .container {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  position: relative;
+  top: 9rem;
+  margin: 0 0.25rem 0;
+}
+
+.new-arrival .container h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 2rem 3rem 0.25rem 3rem;
+}
+
+.new-arrival .container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0rem 3rem 2rem 3rem;
+}
