@@ -52,7 +52,7 @@ header {
   width: 25rem;
   position: relative;
   top: 9rem;
-  margin: 0 10.75rem 0;
+
 }
 
 .new-arrival .container h1 {
@@ -64,6 +64,46 @@ header {
   font-size: 2rem;
   font-weight: bold;
   padding: 0rem 3rem 2rem 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .new-arrival h1 {
+    font-size: 0.77rem;
+    padding: 1rem 0 1rem 2rem;
+  }
+  .new-arrival h2 {
+    font-size: 1em;
+    padding: 1rem 0 1rem 2rem;
+  }
+  .new-arrival {
+    height: 15rem;
+  }
+
+  .new-arrival .container {
+    position: relative;
+    top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .new-arrival {
+    height: 15rem;
+  }
+  .new-arrival .container {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+  .new-arrival h1 {
+    font-size: 1rem;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+  .new-arrival h2 {
+    font-size: 0.7rem;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
 }
 
 /*Navigation Bar*/
@@ -80,13 +120,28 @@ header {
   padding: 0.75rem;
 }
 
-/*Products*/
+.mobile-navigation {
+  display: none;
+  color: white;
+}
 
-.products {
+@media only screen and (max-width: 1024px) {
+  .link {
+    display: none;
+  }
+  .mobile-navigation {
+    display: block;
+    text-align: center;
+  }
+}
+
+/*Products & Business Info*/
+
+.products, .business-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3rem 0;
+  margin-top: 3rem;
 }
 
 .product {
@@ -109,34 +164,59 @@ header {
   text-align: center;
   background-color: black;
   color: White;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 }
 
-/*Location / Hours */
-
-.location-hours {
-  display: flex;
-  padding: 3rem 0 4rem 0;
+.info {
+  width: 35%;
 }
 
-.location-hours h4 {
+.info .title {
+  display: block;
+  padding: 1rem 2rem;
   background-color: black;
   color: white;
 }
 
-.location, .hours {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35%;
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+  .glasses {
+    dislay: none;
+  }
+  .info {
+    width: 35%;
+  }
 }
 
-.location-hours h4 {
-  padding: 1rem 0 1rem 2rem;
+@media only screen and (max-width: 470px) {
+  .products, .business-info {
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+  .watch {
+    display: none;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
 }
-
 /*Footer*/
 
 .footer {
-  
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-wdith: 470px) {
+  .footer{
+    text-align: center;
+  }
 }
